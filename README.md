@@ -34,9 +34,10 @@ $ npm install web-locks
 ## Usage
 
 ```js
-await locks.request('Resource name', async lock => {
+const res = await locks.request('Resource name', async lock => {
   // use named resource and release it after return
 });
+res // Result of function
 ```
 
 More examples [here](./examples/README.md)
