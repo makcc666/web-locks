@@ -119,7 +119,7 @@ class LockManager {
         }
         
         const res = await lock.enter(handler, timeout, signal);
-        console.log("res::::::::::::::sad", res)
+        
         setTimeout(() => {
             lock.tryEnter();
         }, 0);
